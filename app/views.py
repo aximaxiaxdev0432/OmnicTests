@@ -37,8 +37,8 @@ def exchange_period(request):
 	if request.method == 'GET':
 		username = request.GET.get('username')
 		password = request.GET.get('password')
-		from_date = request.GET.get('from')
-		to_date = request.GET.get('to')
+		from_date = request.GET.get('date_from')
+		to_date = request.GET.get('date_to')
 
 
 	if request.method == 'POST':
@@ -46,8 +46,8 @@ def exchange_period(request):
 		username = request.POST.get('username')
 		password = request.POST.get('password')
 
-		from_date = request.POST.get('from')
-		to_date = request.POST.get('to')
+		from_date = request.POST.get('date_from')
+		to_date = request.POST.get('date_to')
 
 	print(username)
 
